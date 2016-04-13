@@ -1,0 +1,90 @@
+@CHARSET "UTF-8";
+.law{
+  color: white;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 170px;
+  font: cursive;
+  font-size: 1em;
+}
+body{
+	background-image: url("header.jpg");
+	position: fixed;
+	background-repeat: no-repeat;
+	background-position: 50% -8%;
+	background-color: black; 
+}
+nav{
+	width: 100%;	
+}
+nav ul{
+	display: inline;
+}
+nav ul li {
+	display: inline-block;
+	list-style-type: none;
+	padding: 5px 15px;
+}
+nav ul li a{
+	color: white;
+}
+	#test {
+  color: #FFDD1B;
+  font-family: Pacifico;
+}
+nav ul li a:hover {
+  -webkit-animation: neon3 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon3 1.5s ease-in-out infinite alternate;
+  animation: neon3 1.5s ease-in-out infinite alternate;
+}
+
+.polaroid {
+  position: relative;
+  width: 270px;
+  right: -85%;
+  top: 100px;
+  
+}
+ 
+.polaroid img {
+  border: 10px solid #fff;
+  border-bottom: 30px solid #fff;
+  -webkit-box-shadow: 3px 3px 3px #777;
+     -moz-box-shadow: 3px 3px 3px #777;
+          box-shadow: 3px 3px 3px #777;
+}
+ 
+.polaroid p {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: -10px;
+  font: cursive;
+  color: black;
+  font-size: 1em;
+}
+
+.box {
+  position: relative;
+  background-color: white;
+  width: 270px;
+  height: 290px;
+  right: -50%;
+  top: -194px;
+  -webkit-box-shadow: 3px 3px 3px #777;
+     -moz-box-shadow: 3px 3px 3px #777;
+          box-shadow: 3px 3px 3px #777;
+}
+ 
+.box p {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 0px;
+  font: cursive;
+  color: black;
+  font-size: 1em;
+}
+	
+
