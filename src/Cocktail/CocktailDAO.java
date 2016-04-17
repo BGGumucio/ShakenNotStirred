@@ -47,7 +47,6 @@ public class CocktailDAO {
 				Cocktail drink = new Cocktail(allParts, name, instructions, image);
 				drinkList.add(drink);
 
-
 			}
 		} catch (Exception e) {
 			System.out.println("exception here");
@@ -72,7 +71,6 @@ public class CocktailDAO {
 		for (Cocktail drink : drinkList) {
 			if (name.equals(drink.getName())) {
 				newDrink = drink;
-				System.out.println(newDrink.getIngredients());
 			}
 		}
 		return newDrink;
@@ -95,17 +93,21 @@ public class CocktailDAO {
 		return result;
 	}
 
-	public void addDrink(Cocktail cocktail){
+	public void addDrink(Cocktail cocktail) {
 		drinkList.add(cocktail);
 	}
-	public Cocktail lastDrink(){
-		return drinkList.get(drinkList.size()-1);
-	}
-	public void changeDrink(Cocktail cocktail){
-		
+
+	public Cocktail lastDrink() {
+		return drinkList.get(drinkList.size() - 1);
 	}
 
-}			
-		
-		
-	
+	public void changeDrink(String name, ArrayList changed, String instructions) {
+		for (Cocktail drink : drinkList) {
+			if (name.equals(drink.getName())) {
+				drink.setIngredients(changed);
+				drink.setInstructions(instructions);
+			}
+		}
+
+	}
+}

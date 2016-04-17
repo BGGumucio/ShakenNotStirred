@@ -33,10 +33,11 @@
 	</div>
 	<div>
 	<div class="form">
-		<form> <!--  action="changeDrink.pattern" method="GET">  -->
+		<form action="changeDrink.pattern" method="GET"> 
 			<div class="form_content">
 				<input type="hidden" name="name" value= "${Cocktail.name}"></input>
 				<p>
+				${Cocktail.name}
 				</p>
 				<br>
 				<c:forEach var= "ingredient" items= "${Cocktail.ingredients}">
@@ -44,6 +45,8 @@
 				<br> 
 				</c:forEach> 
 				<span class= "form_button">
+				<input type="text" name="ingredient"/>
+				<input type="text" name="ingredient"/>
 				<input type= "submit" name= "submit" value= "submit">
 				</span>
 					</div>

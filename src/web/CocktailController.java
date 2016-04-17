@@ -59,8 +59,20 @@ public class CocktailController {
 		mv.addObject("Cocktail", dao.lastDrink());
 		return mv;
 	}
+	@RequestMapping("changeDrink.pattern")
+	public ModelAndView changeData(@RequestParam("ingredient") String ingredient, 
+									@RequestParam("name") String name,
+									@RequestParam("Text1") String instructions) {
+		ArrayList<String> newingred = new ArrayList<>();
+		newingred.add(ingredient);
+		dao.changeDrink(name, newingred, instructions);
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("index.jsp");
+		mv.addObject("Cocktail", dao.lastDrink());
+		return mv;
+	}
 	@RequestMapping("editDrink.pattern")
-	public ModelAndView changeData(@RequestParam("name") String name) {
+	public ModelAndView editData(@RequestParam("delete") String name) {
 		ModelAndView mv = new ModelAndView();
 		mv.setViewName("edit.jsp");
 		mv.addObject("Cocktail", dao.lastDrink());
