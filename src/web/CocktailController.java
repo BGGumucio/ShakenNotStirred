@@ -63,9 +63,14 @@ public class CocktailController {
 	public ModelAndView changeData(@RequestParam("ingredient") String ingredient, 
 									@RequestParam("name") String name,
 									@RequestParam("Text1") String instructions) {
-		ArrayList<String> newingred = new ArrayList<>();
-		newingred.add(ingredient);
-		dao.changeDrink(name, newingred, instructions);
+		String [] placeholder = ingredient.split(",");
+		ArrayList<Ingredient> newingreds = new ArrayList<>();
+		for (String string : placeholder) {
+			String [] place = string.split(" ");
+			Ingredient i = new Ingredient(Double.parseDouble(place[0]), place[1], place[2]);
+			newingreds.add(i);
+		}
+		dao.changeDrink(name, newingreds, instructions);
 		ModelAndView mv = new ModelAndView();
 		mv.setViewName("index.jsp");
 		mv.addObject("Cocktail", dao.lastDrink());
