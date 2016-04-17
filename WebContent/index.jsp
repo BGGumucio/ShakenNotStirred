@@ -16,24 +16,15 @@
 <span id="list">
 <ul>
 <li><a href="#">Home</a></li>
-<li><a href="#">About</a></li>
-<li><a href="#">Add A Cocktail</a></li>
-<li><a href="#">Search Cocktails</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="add.html">Add A Cocktail</a></li>
+<li><a href="select.html">Search Cocktails</a></li>
 <li><a href="#"></a></li>
 </ul>
 </span>
 </nav>
-</div></div>
-<div></div>
-
-<div class="polaroid">
-  <p>Old Fashioned</p>
-  <img src="./images/oldfashioned.jpg" />
+<div class= "intro">
 </div>
-<div class="box">
-  <p>Text Box</p>
-</div>
-<div class= "law">"Couglin's diet: cocktails and dreams."</div>
 <footer></footer>
 </body>
 </html>

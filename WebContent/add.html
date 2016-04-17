@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Shaken not stirred!</title>
+<link rel="stylesheet" href="./StyleSheet.css">
+<link rel="stylesheet" href="./test.css">
+</head>
+<body>
+	<div class="text">
+		<div id="container">
+			<header>
+				<h1>
+					<span id="shaken">SHAKEN</span> <span id="stirred">notstirred</span>
+				</h1>
+			</header>
+			<nav>
+				<span id="list">
+					<ul>
+						<li><a href="index.jsp">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="add.html">Add A Cocktail</a></li>
+						<li><a href="select.html">Search Cocktails</a></li>
+						<li><a href="#"></a></li>
+					</ul>
+				</span>
+			</nav>
+		</div>
+	</div>
+	<div>
+	<div class="form">
+		<form action="addDrink.pattern" method="POST">
+			<div class="form_content">
+				<input type="text" name="name" value= "name"></input>
+				<p>
+				Vodka<input type="radio" name="alcohol" value="Vodka"></input>
+				Tequila<input type="radio" name="alcohol" value="Tequila"></input>
+				Rum<input type="radio" name="alcohol" value="Rum"></input> Whiskey<input
+					type="radio" name="alcohol" value="Whiskey"></input> Gin<input
+					type="radio" name="alcohol" value="Gin"><br>
+				</p>
+				1:<br>
+				<input type="text" name="measurementQuantity"></input>
+					<select name="measurementType">
+					<option value="oz">Oz.</option>
+					<option value="dash">Dash(es)</option>
+					<option value="parts">Part(s)</option>
+					<option value="none">None</option>
+				</select><br> <input
+					type="text" name="base"><br>
+				2:<br>
+				<input type="text" name="measurementQuantity2"></input>
+					<select name="measurementType2">
+					<option value="oz">Oz.</option>
+					<option value="dash">Dash(es)</option>
+					<option value="parts">Part(s)</option>
+					<option value="none">None</option>
+				</select><br> <input
+					type="text" name="base2"><br>
+				3:<br>
+				<input type="text" name="measurementQuantity3"></input>
+					<select name="measurementType3">
+					<option value="oz">Oz.</option>
+					<option value="dash">Dash(es)</option>
+					<option value="parts">Part(s)</option>
+					<option value="none">None</option>
+				</select><br> <input
+					type="text" name="base3"><br>
+				4:<br>
+				<input type="text" name="measurementQuantity4"></input>
+					<select name="measurementType4">
+					<option value="oz">Oz.</option>
+					<option value="dash">Dash(es)</option>
+					<option value="parts">Part(s)</option>
+					<option value="none">None</option>
+				</select><br> <input
+					type="text" name="base4"><br> 
+				<span class= "form_button">
+				<input type= "submit" name= "submit" value= "submit">
+				</span>
+					</div>
+			<div class="instructions">
+				<label><b>Instructions:</b></label><br />
+				<textarea name="instructions" cols="30" rows="20"... ></textarea>
+			</div>
+		</form>
+		</div>
+	</div>
+	<div class="law">"Couglin's diet: cocktails and dreams."</div>
+	<footer></footer>
+</body>
+</html>

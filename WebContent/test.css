@@ -1,15 +1,7 @@
 @CHARSET "UTF-8";
-.text{
-	width: 120%;
-	text-align: right;
-}
-
 /*setup*/
 
-* {
-  margin: 0;
-  padding: 0;
-}
+
 
 @font-face {
   font-family: 'Monoton';
@@ -59,19 +51,6 @@
   margin: auto;
 }
 /*neeeeoooon*/
-
-p {
-  text-align: center;
-  font-size: 5em;
-  margin: 20px 0 20px 0;
-}
-
-a {
-  text-decoration: none;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  transition: all 0.5s;
-}
 
 #shaken {
   color: #fff;
@@ -179,8 +158,8 @@ p a:hover {
   from {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FFDD1B, 0 0 70px #FFDD1B, 0 0 80px #FFDD1B, 0 0 100px #FFDD1B, 0 0 150px #FFDD1B;
   }
-  to {
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FFDD1B, 0 0 35px #FFDD1B, 0 0 40px #FFDD1B, 0 0 50px #FFDD1B, 0 0 75px #FFDD1B;
+  to {
   }
 }
 

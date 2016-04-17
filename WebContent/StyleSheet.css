@@ -1,90 +1,166 @@
 @CHARSET "UTF-8";
-.law{
-  color: white;
-  position: absolute;
-  text-align: center;
-  width: 100%;
-  bottom: 170px;
-  font: cursive;
-  font-size: 1em;
+
+.colleft:hover{
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
 }
-body{
+.colleft{
+	text-align: center;
+	margin-top: 65px;
+    margin-bottom: 10px;
+    margin-right: 0px;
+    margin-left: 10px;
+	background-color:rgba(255,255,255,0.2);
+	color: white;
+	width: 50%;
+	float: right;
+	
+}
+.col1{
+	width: 49%;
+	height:90%;
+	float: left;
+	color: white;
+	font-size: 1em;
+	margin-top: 5%;
+	margin-right: 0.5%;
+}
+.col1 ul{
+	text-align: center;
+}
+.col1 ul>li{
+	text-align: center;
+	list-style-type: none;
+}
+.col1 p{
+	color: white;
+	font-size: 1em;
+	margin: 10px;
+}
+.col2{
+	margin-top: 5%;
+	width: 50%;
+	height: 90%;
+	float: right;
+}
+.col2 img{
+	border: 10px solid #fff;
+	border-bottom: 30px solid #fff;
+	-webkit-box-shadow: 3px 3px 3px #777;
+	-moz-box-shadow: 3px 3px 3px #777;
+	box-shadow: 3px 3px 3px #777;
+    -webkit-transform: rotateZ(-10deg);
+    -ms-transform: rotateZ(-10deg);
+    transform: rotateZ(-10deg);
+}
+.editbutton{
+	height: 10%;
+	float right;
+	margin-top: 0px;
+    margin-bottom: -5%;
+    margin-left: 120px;
+		
+}
+
+.text {
+	width: 110%;
+	text-align: right;
+}
+
+.intro {
+	color: white;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	bottom: -500px;
+	right: -25px;
+}
+
+body {
 	background-image: url("header.jpg");
 	position: fixed;
 	background-repeat: no-repeat;
 	background-position: 50% -8%;
-	background-color: black; 
+	background-color: black;
 }
-nav{
-	width: 100%;	
+
+nav {
+	width: 100%;
 }
-nav ul{
+
+nav ul {
 	display: inline;
 }
+
 nav ul li {
 	display: inline-block;
 	list-style-type: none;
-	padding: 5px 15px;
+	padding: 0px 15px;
 }
-nav ul li a{
+
+nav ul li a {
 	color: white;
 }
-	#test {
-  color: #FFDD1B;
-  font-family: Pacifico;
+
+#test {
+	color: #FFDD1B;
+	font-family: Pacifico;
 }
+
 nav ul li a:hover {
-  -webkit-animation: neon3 1.5s ease-in-out infinite alternate;
-  -moz-animation: neon3 1.5s ease-in-out infinite alternate;
-  animation: neon3 1.5s ease-in-out infinite alternate;
+	-webkit-animation: neon3 1.5s ease-in-out infinite alternate;
+	-moz-animation: neon3 1.5s ease-in-out infinite alternate;
+	animation: neon3 1.5s ease-in-out infinite alternate;
+}
+.form {
+	position: relative; 
+	width: 50%;
+	height: 350px;
+	right: -58%;
+	top: 15px;
+	float: left;
+	padding: 10px;
+	font-size: 1em;
+	border-style: ridge;
+	border-width: 5px;
+	border-color: white rgba(255, 255, 255, .5);
+	-webkit-box-shadow: 3px 3px 3px #777;
+	-moz-box-shadow: 3px 3px 3px #777;
+	box-shadow: 3px 3px 3px #777;
+	color: black;
+}
+.form p{
+	color: white;
+	font-size: 1em;
+}
+input{
+	background-color: black;
+	color:white;
+}
+.form_content {
+	background-color: black;
+	float: left;
+	width: 58%;
+	float: left;
 }
 
-.polaroid {
-  position: relative;
-  width: 270px;
-  right: -85%;
-  top: 100px;
-  
-}
- 
-.polaroid img {
-  border: 10px solid #fff;
-  border-bottom: 30px solid #fff;
-  -webkit-box-shadow: 3px 3px 3px #777;
-     -moz-box-shadow: 3px 3px 3px #777;
-          box-shadow: 3px 3px 3px #777;
-}
- 
-.polaroid p {
-  position: absolute;
-  text-align: center;
-  width: 100%;
-  bottom: -10px;
-  font: cursive;
-  color: black;
-  font-size: 1em;
+.form_button {
+	float: right;
 }
 
-.box {
-  position: relative;
-  background-color: white;
-  width: 270px;
-  height: 290px;
-  right: -50%;
-  top: -194px;
-  -webkit-box-shadow: 3px 3px 3px #777;
-     -moz-box-shadow: 3px 3px 3px #777;
-          box-shadow: 3px 3px 3px #777;
+.instructions {
+	background-color: black;
+	color: white;
+	float: left;
+	width: 42%;
+	float: left;
 }
- 
-.box p {
-  position: absolute;
-  text-align: center;
-  width: 100%;
-  bottom: 0px;
-  font: cursive;
-  color: black;
-  font-size: 1em;
-}
-	
 
+.law {
+	position: absolute;
+	color: white;
+	display: block;
+	top: 550px;
+	left: 700px;
+}
