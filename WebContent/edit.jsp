@@ -22,7 +22,6 @@
 				<span id="list">
 					<ul>
 						<li><a href="index.jsp">Home</a></li>
-						<li><a href="about.html">About</a></li>
 						<li><a href="add.html">Add A Cocktail</a></li>
 						<li><a href="select.html">Search Cocktails</a></li>
 						<li><a href="#"></a></li>
@@ -32,9 +31,9 @@
 		</div>
 	</div>
 	<div>
-	<div class="form">
+	<div class= "colleft">
 		<form action="changeDrink.pattern" method="GET"> 
-			<div class="form_content">
+			<div class="col1">
 				<input type="hidden" name="name" value= "${Cocktail.name}"></input>
 				<p>
 				${Cocktail.name}
@@ -46,11 +45,11 @@
 				</c:forEach> 
 				<span class= "form_button">
 				<input type="text" name="ingredient"/>
-				<input type="text" name="ingredient"/>
+				<br>
 				<input type= "submit" name= "submit" value= "submit">
 				</span>
 					</div>
-			<div class="instructions">
+			<div class="col2">
 				<label><b>Instructions:</b></label><br />
 				<textarea name="Text1" value= "${Cocktail.instructions}" cols="30" rows="20"... >${Cocktail.instructions}</textarea>
 			</div>

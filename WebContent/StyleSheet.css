@@ -139,28 +139,10 @@ input{
 	color:white;
 }
 .form_content {
-	background-color: black;
-	float: left;
-	width: 58%;
-	float: left;
+	margin: 20px;
+	width: 50%;
 }
 
 .form_button {
-	float: right;
-}
-
-.instructions {
-	background-color: black;
-	color: white;
-	float: left;
-	width: 42%;
-	float: left;
-}
-
-.law {
-	position: absolute;
-	color: white;
-	display: block;
-	top: 550px;
-	left: 700px;
+	text-align:center;	
 }

@@ -80,7 +80,7 @@ public class CocktailController {
 	public ModelAndView editData(@RequestParam("delete") String name) {
 		ModelAndView mv = new ModelAndView();
 		mv.setViewName("edit.jsp");
-		mv.addObject("Cocktail", dao.lastDrink());
+		mv.addObject("Cocktail", dao.getDrink(name));
 		return mv;
 	}
 

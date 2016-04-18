@@ -21,7 +21,6 @@
 			<nav> <span id="list">
 				<ul>
 					<li><a href="index.jsp">Home</a></li>
-					<li><a href="about.html">About</a></li>
 					<li><a href="add.html">Add A Cocktail</a></li>
 					<li><a href="select.html">Search Cocktails</a></li>
 					<li><a href="#"></a></li>
